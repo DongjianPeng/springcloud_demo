@@ -4,11 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+
 @EnableEurekaClient
 @SpringBootApplication
-public class ConsumerOrder80 {
+public class PaymentMain8002 {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ConsumerOrder80.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(PaymentMain8002.class, args);
+	}
 }

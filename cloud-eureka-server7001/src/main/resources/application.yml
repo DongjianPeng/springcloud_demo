@@ -4,7 +4,7 @@ server:
 eureka:
   instance:
     # eureka服务端的实例名称
-    hostname: localhost
+    hostname: eureka7001.com
   client:
     # 不向注册中心注册自己
     register-with-eureka: false
@@ -12,4 +12,9 @@ eureka:
     fetch-registry: false
     service-url:
       # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/
+  server:
+    # 是否开启自我保护机制
+    enable-self-preservation: true
+    # 未收到心跳而删除服务的超时时间
+    eviction-interval-timer-in-ms: 0
