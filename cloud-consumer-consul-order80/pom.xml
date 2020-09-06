@@ -9,7 +9,8 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>cloud-consumer-order80</artifactId>
+	<artifactId>cloud-consumer-consul-order80</artifactId>
+
 
 	<dependencies>
 		<dependency>
@@ -24,14 +25,8 @@
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
 		</dependency>
-
-		<!-- spring-cloud-starter-netflix-eureka-client已经引入了spring-cloud-starter-netflix-ribbon -->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.cloud</groupId>-->
-			<!--<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
-		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
