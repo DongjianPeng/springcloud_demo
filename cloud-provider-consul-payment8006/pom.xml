@@ -9,9 +9,10 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>cloud-consumer-order80</artifactId>
+	<artifactId>cloud-provider-consul-payment8006</artifactId>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -24,24 +25,29 @@
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
 		</dependency>
 
-		<!-- spring-cloud-starter-netflix-eureka-client已经引入了spring-cloud-starter-netflix-ribbon -->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.cloud</groupId>-->
-			<!--<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>2.1.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>top.murphypen.springcloud</groupId>
-			<artifactId>common-model</artifactId>
-			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
@@ -50,6 +56,13 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
+		<dependency>
+			<groupId>top.murphypen.springcloud</groupId>
+			<artifactId>common-model</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>junit</groupId>

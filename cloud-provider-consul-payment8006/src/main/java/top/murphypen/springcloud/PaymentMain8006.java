@@ -3,14 +3,13 @@ package top.murphypen.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 
-@EnableEurekaClient
+@EnableDiscoveryClient
 @SpringBootApplication
-public class PaymentMain8002 {
+public class PaymentMain8006 {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8002.class, args);
+        SpringApplication.run(PaymentMain8006.class, args);
     }
 }
